@@ -281,6 +281,8 @@ cursor: pointer;
     margin: auto;
     z-index: 1;
     text-shadow: 1px 1px rgb(20, 224, 197);
+    font-size: 70px;
+    text-align: center;
 
 }
 .rest:hover{

@@ -387,9 +387,18 @@ function gameEnd(){
     gamy.removeChild(airSpace);
     let rest=document.createElement("div")
     rest.classList.add("rest");
+    rest.innerText="RESTART"
     gamy.appendChild(rest)
 
+    rest=document.querySelector(".rest")
+rest.onclick=function restart(){
+    gamy.removeChild(rest)
+    gamy.appendChild(cloudSpace);
+    gamy.appendChild(airSpace);
+    fly();
 
+
+}
 
 
   
@@ -397,13 +406,7 @@ function gameEnd(){
 
 
 }
-rest=document.querySelector(".rest")
-if(cloudSpace==false){rest.onclick=function restart(){
-    gamy.removeChild(rest)
-    gamy.appendChild(cloudSpace);
-    gamy.appendChild(airSpace);
-    fly();
-}}
+
 
 
 
